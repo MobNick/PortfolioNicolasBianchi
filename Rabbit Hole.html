@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto "8 Bit Horror"</title>
+    <title>Projeto "Rabbit Hole"</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic&family=Comfortaa:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/geral.css">
-    <link rel="stylesheet" href="/css/home.css">
-    <link rel="stylesheet" href="/css/footer.css">  
-    <link rel="stylesheet" href="/css/paginaProjeto.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">  
+    <link rel="stylesheet" href="css/paginaProjeto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -21,39 +21,31 @@
 
     <main>
         <div class="colunaInfo">
-            <h1 class="projecttitle">8 Bit Horror</h1>
+            <h1 class="projecttitle">Rabbit Hole</h1>
             <div class="separacao"></div>
             <div class="colunaTexto">
-                <p> Dessa vez, quis experimentar com ambientação para um jogo de terror retrô. Com grande foco em gerar ansiedade, os sons e a iluminação foram as maiores preocupações.
+                <p> Neste projeto, eu quis implementar construção em <em>grid</em> usando o sistema de <em>tilemap</em> do Unity. Além disso, fiz as luzes 2D interagirem com os novos blocos colocados.
                 <p>
-                    Aqui, usei a renderização da Godot Engine a meu favor para filtrar entre objetos que devem sumir completamente fora da luz, e objetos que apenas ficam mais escuros.
+                    Fiz também uma mecânica de escalar paredes, espinhos que caem ao destruir os blocos onde eles estavam, um sistema de diálogos, e a mecânica para derrotar o inimigo de duas formas:
                 </p>
                 <p>
-                    Além disso, inspirado por jogos survival horror como Resident Evil, criei portas que só podem ser abertas por um lado, portas que precisam de chaves específicas e um sistema reutilizável para inspecionar objetos de interesse.
-                </p>
-                <p>
-                    Por fim, eu implementei dano e adicionei o impacto extra do som, do <em>knockback</em> e do indicador de vida baixa.
+                    • Pisando na cabeça dele (como em Super Mario);<br>
+                    • Derrubando ele no espinho ou o inverso.
                 </p>
                 <div class="videobox">
                     <h3>Demo - Mecânicas</h3>
                     <video width="100%" height="100%" controls>
-                        <source src="/midia/Videos/8BitHorror_Video.mp4" type="video/mp4">
+                        <source src="/midia/Videos/RabbitHole_Video.mp4" type="video/mp4">
                         Seu navegador não tem suporte a videos
                      </video>
                  </div>
                 <p>
-                    Na parte de IA, fiz com que o monstro, ao ouvir o jogador, vá inspecionar o local de onde veio o som. Caso ele não encontre o jogador, ele perde interesse na busca e volta aos estados padrão.
-                </p>
-                <p>
-                    Quando está seguindo o jogador, se o perder de vista, o monstro deduz para onde o jogador pode ter ido, e segue esse rastro. Se continuar procurando e não encontrar, também perde o interesse.
-                </p>
-                <p>
-                    Para fazer essa IA, eu criei uma <em>State Machine</em> que determina como agir em cada estado, além de decidir para qual estado mudar diante de cada situação.
+                    Além disso, quis implementar uma IA que fosse capaz de se adaptar às mudanças causadas pelo jogador no cenário. Então ao invés de usar sistemas que dependeriam de planejamento prévio do formato do mapa, implementei uma IA baseada em decisões feitas a partir da visão do inimigo
                 </p>
                 <div class="videobox">
                     <h3>Demo - Inteligência Artificial</h3>
                     <video width="100%" height="100%" controls>
-                        <source src="/midia/Videos/8BitHorrorAIDemo.mp4" type="video/mp4">
+                        <source src="/midia/Videos/RabbitHoleAIDemo.mp4" type="video/mp4">
                         Seu navegador não tem suporte a videos
                      </video>
                  </div>
@@ -63,8 +55,8 @@
 
     <section>
         <div class="navegar">
-            <a href="/Paginas/Rabbit Hole.html">< Anterior</a>
-            <a href="/index.html">Página Principal ></a>
+            <a href="Programing.html">< Anterior</a>
+            <a href="8 Bit Horror.html">Próximo ></a>
         </div>
     </section>
 
